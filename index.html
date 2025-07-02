@@ -3,70 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Submit & View Responses</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     * {
       box-sizing: border-box;
     }
 
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
       font-family: 'Inter', sans-serif;
       background: linear-gradient(to right, #e0f7fa, #ffffff);
-      padding: 40px 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      min-height: 100vh;
     }
 
     h1 {
-      font-size: 2.2rem;
+      font-size: 2rem;
       font-weight: 600;
       text-align: center;
-      margin-bottom: 40px;
+      margin: 40px 20px 20px;
       color: #222;
-      padding: 0 10px;
     }
 
     .container {
       width: 100%;
       max-width: 960px;
+      margin: 0 auto 40px;
       background: white;
       border-radius: 16px;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
-      padding: 30px;
-      margin-bottom: 50px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      padding: 24px;
       overflow: hidden;
+    }
+
+    .section-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
     }
 
     iframe {
       width: 100%;
-      min-height: 600px;
       border: none;
       border-radius: 12px;
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: 1.4rem;
-      font-weight: 600;
-      margin-bottom: 20px;
-      margin-top: 10px;
+      min-height: 600px;
     }
 
     /* Responsive Design */
     @media (max-width: 768px) {
-      body {
-        padding: 20px 10px;
-      }
-
       h1 {
-        font-size: 1.5rem;
-        margin-bottom: 30px;
+        font-size: 1.6rem;
+        margin: 20px 10px;
       }
 
       .container {
-        padding: 20px 15px;
+        padding: 16px;
+        margin-bottom: 30px;
       }
 
       .section-title {
@@ -74,20 +69,23 @@
       }
 
       iframe {
-        min-height: 800px;
+        min-height: 900px;
       }
     }
 
     @media (max-width: 480px) {
       iframe {
-        min-height: 1000px;
+        min-height: 1100px;
       }
     }
   </style>
 </head>
 <body>
 
+  <h1>Submit Your Feedback & View Responses</h1>
+
   <div class="container">
+    <div class="section-title">📝 Submit Feedback</div>
     <iframe
       src="https://docs.google.com/forms/d/e/1FAIpQLSfZgYoYp3YoEQPFgG-dZq_HJcFHl6YjH3hKukTp3VYuXHQLEw/viewform?embedded=true"
       height="1600"
@@ -96,7 +94,7 @@
   </div>
 
   <div class="container">
-    <div class="section-title">View Live Responses</div>
+    <div class="section-title">📊 View Live Responses</div>
     <iframe
       src="https://docs.google.com/spreadsheets/d/1dCpvEuVAivYqo31DassKK_8QAdIuN_unNOZUDXS8kZo/edit?usp=sharing"
       height="600"
