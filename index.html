@@ -6,6 +6,10 @@
   <title>Submit & View Responses</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
@@ -17,10 +21,12 @@
     }
 
     h1 {
-      font-size: 32px;
+      font-size: 2.2rem;
       font-weight: 600;
-      margin-bottom: 30px;
+      text-align: center;
+      margin-bottom: 40px;
       color: #222;
+      padding: 0 10px;
     }
 
     .container {
@@ -31,33 +37,51 @@
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
       padding: 30px;
       margin-bottom: 50px;
+      overflow: hidden;
     }
 
     iframe {
       width: 100%;
+      min-height: 600px;
       border: none;
       border-radius: 12px;
     }
 
     .section-title {
       text-align: center;
-      font-size: 22px;
+      font-size: 1.4rem;
       font-weight: 600;
       margin-bottom: 20px;
       margin-top: 10px;
     }
 
+    /* Responsive Design */
     @media (max-width: 768px) {
+      body {
+        padding: 20px 10px;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+      }
+
       .container {
         padding: 20px 15px;
       }
 
-      h1 {
-        font-size: 26px;
+      .section-title {
+        font-size: 1.2rem;
       }
 
-      .section-title {
-        font-size: 18px;
+      iframe {
+        min-height: 800px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      iframe {
+        min-height: 1000px;
       }
     }
   </style>
@@ -67,18 +91,19 @@
   <h1>Submit Your Feedback & See Responses</h1>
 
   <div class="container">
-    <div class="section-title">📝 Submit Feedback</div>
     <iframe
       src="https://docs.google.com/forms/d/e/1FAIpQLSfZgYoYp3YoEQPFgG-dZq_HJcFHl6YjH3hKukTp3VYuXHQLEw/viewform?embedded=true"
-      height="1750">
+      height="1600"
+      loading="lazy">
     </iframe>
   </div>
 
   <div class="container">
-    <div class="section-title">📊 Live Responses</div>
+    <div class="section-title">View Live Responses</div>
     <iframe
       src="https://docs.google.com/spreadsheets/d/1dCpvEuVAivYqo31DassKK_8QAdIuN_unNOZUDXS8kZo/edit?usp=sharing"
-      height="600">
+      height="600"
+      loading="lazy">
     </iframe>
   </div>
 
