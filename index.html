@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Submit & View Responses</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #ffffff);
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 600;
+      margin-bottom: 30px;
+      color: #222;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 960px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+      padding: 30px;
+      margin-bottom: 50px;
+    }
+
+    iframe {
+      width: 100%;
+      border: none;
+      border-radius: 12px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px 15px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      .section-title {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Submit Your Feedback & See Responses</h1>
+
+  <div class="container">
+    <div class="section-title">📝 Submit Feedback</div>
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSfZgYoYp3YoEQPFgG-dZq_HJcFHl6YjH3hKukTp3VYuXHQLEw/viewform?embedded=true"
+      height="1750">
+    </iframe>
+  </div>
+
+  <div class="container">
+    <div class="section-title">📊 Live Responses</div>
+    <iframe
+      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRdD7uOf3GFmlIn-mqhsVZn1uzfZK8vWi0lAweHfGHtJbOYWrKn_4PLXfV17Lb79dNBdrWjCKn1XZWE/pubhtml?widget=true&amp;headers=false"
+      height="600">
+    </iframe>
+  </div>
+
+</body>
+</html>
